@@ -1,0 +1,156 @@
+::root {
+    --plain-grid-color: blueviolet;
+    --plain-back-color: black;
+    --mountain-color: black;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: clip;
+  }
+
+#plain {
+    position: absolute;
+    width: 100%;
+    height: 40vh;
+    margin-top: 60vh;
+    background-color: black;
+}
+
+/* Quadrillage horizontal de la plaine */
+.horizontal-line {
+    position: absolute;
+    width: 100%;
+    height: 1vh;
+    background-color: blueviolet;
+}
+
+.horizontal-line.first {
+    bottom: 90%;
+}
+
+.horizontal-line.second {
+    bottom: 80%;
+}
+
+.horizontal-line.third {
+    bottom: 70%;
+}
+
+.horizontal-line.fourth {
+    bottom: 60%;
+}
+
+.horizontal-line.fifth {
+    bottom: 50%;
+}
+
+.horizontal-line.sixth {
+    bottom: 40%;
+}
+
+.horizontal-line.seventh {
+    bottom: 30%;
+}
+
+.horizontal-line.eighth {
+    bottom: 20%;
+}
+
+.horizontal-line.ninth {
+    bottom: 10%;
+}
+
+.horizontal-line.tenth {
+    bottom: 100%;
+}
+
+/* Quadrillage vertical de la plaine */
+.vertical-line {
+    position: absolute;
+    width: 1vh;
+    height: 100%;
+    background-color: blueviolet;
+}
+
+.vertical-line.first {
+    right: 6.25%;
+}
+
+.vertical-line.second {
+    right: 12.5%;
+}
+
+.vertical-line.third {
+    right: 18.75%;
+}
+
+.vertical-line.fourth {
+    right: 25%;
+}
+
+.vertical-line.fifth {
+    right: 31.25%;
+}
+
+.vertical-line.sixth {
+    right: 37.5%;
+}
+
+.vertical-line.seventh {
+    right: 43.75%;
+}
+
+.vertical-line.eighth {
+    right: 50%;
+}
+
+.vertical-line.ninth {
+    right: 56.25%;
+}
+
+.vertical-line.tenth {
+    right: 62.5%;
+}
+
+.vertical-line.eleventh {
+    right: 68.75%;
+}
+
+.vertical-line.twelfth {
+    right: 75%;
+}
+
+.vertical-line.thirteenth {
+    right: 81.25%;
+}
+
+.vertical-line.fourteenth {
+    right: 87.5%;
+}
+
+.vertical-line.fifteenth {
+    right: 93.75%;
+}
+
+/* Horizon de montagnes */
+.mountain {
+    position: absolute;
+    background-color: black;
+}
+
+.mountain.first {
+    top: 50%;
+    left: -10%;
+    width: 400px;
+    height: 400px;
+    transform: rotate(30deg);
+    z-index: -1;
+}
