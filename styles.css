@@ -1,5 +1,6 @@
-::root {
-    --plain-grid-color: blueviolet;
+:root {
+    --sky-color: #2d1b58;
+    --plain-grid-color: magenta;
     --plain-back-color: black;
     --mountain-color: black;
 }
@@ -14,6 +15,7 @@ body {
     width: 100%;
     height: 100vh;
     overflow: clip;
+    background-color: var(--sky-color);
   }
 
 #plain {
@@ -28,8 +30,8 @@ body {
 .horizontal-line {
     position: absolute;
     width: 100%;
-    height: 1vh;
-    background-color: blueviolet;
+    height: 0.5vh;
+    background-color: var(--plain-grid-color);
 }
 
 .horizontal-line.first {
@@ -76,68 +78,122 @@ body {
 .vertical-line {
     position: absolute;
     width: 1vh;
+    overflow: visible;
+    background-color: var(--plain-grid-color);
+}
+
+.vertical-line.minus9 {
+    left: 106.25%;
     height: 100%;
-    background-color: blueviolet;
+    transform: rotate(-56.25deg);
 }
 
-.vertical-line.first {
+
+.vertical-line.minus8 {
+    right: 0%;
+    height: 100%;
+    transform: rotate(-50deg)
+}
+
+.vertical-line.minus7 {
     right: 6.25%;
+    height: 100%;
+    transform: rotate(-43.75deg)
 }
 
-.vertical-line.second {
+.vertical-line.minus6 {
     right: 12.5%;
+    height: 100%;
+    transform: rotate(-37.5deg)
 }
 
-.vertical-line.third {
+.vertical-line.minus5 {
     right: 18.75%;
+    height: 100%;
+    transform: rotate(-31.25deg)
 }
 
-.vertical-line.fourth {
+.vertical-line.minus4 {
     right: 25%;
+    height: 100%;
+    transform: rotate(-25deg)
 }
 
-.vertical-line.fifth {
+.vertical-line.minus3 {
     right: 31.25%;
+    height: 100%;
+    transform: rotate(-18.75deg);
 }
 
-.vertical-line.sixth {
+.vertical-line.minus2 {
     right: 37.5%;
+    height: 100%;
+    transform: rotate(-12.5deg)
 }
 
-.vertical-line.seventh {
+.vertical-line.minus1 {
     right: 43.75%;
+    height: 40vh;
+    transform: rotate(-6.25deg);
 }
 
-.vertical-line.eighth {
+.vertical-line.zero {
     right: 50%;
+    height: 40vh;
 }
 
-.vertical-line.ninth {
+.vertical-line.plus1 {
     right: 56.25%;
+    height: 40vh;
+    transform: rotate(6.25deg);
 }
 
-.vertical-line.tenth {
+.vertical-line.plus2 {
     right: 62.5%;
+    height: 100%;
+    transform: rotate(12.5deg);
 }
 
-.vertical-line.eleventh {
+.vertical-line.plus3 {
     right: 68.75%;
+    height: 100%;
+    transform: rotate(18.75deg);
 }
 
-.vertical-line.twelfth {
+.vertical-line.plus4 {
     right: 75%;
+    height: 100%;
+    transform: rotate(25deg);
 }
 
-.vertical-line.thirteenth {
+.vertical-line.plus5 {
     right: 81.25%;
+    height: 100%;
+    transform: rotate(31.25deg);
 }
 
-.vertical-line.fourteenth {
+.vertical-line.plus6 {
     right: 87.5%;
+    height: 100%;
+    transform: rotate(37.5deg);
 }
 
-.vertical-line.fifteenth {
+.vertical-line.plus7 {
     right: 93.75%;
+    height: 100%;
+    transform: rotate(43.75deg);
+}
+
+.vertical-line.plus8 {
+    right: 100%;
+    height: 100%;
+    transform: rotate(50deg);
+}
+
+.vertical-line.plus9 {
+    right: 106.25%;
+    height: 40vh;
+    transform: rotate(56.25deg);
 }
 
 /* Horizon de montagnes */
@@ -146,11 +202,121 @@ body {
     background-color: black;
 }
 
+.mountain.bottom {
+    top: 55%;
+    width: 100%;
+    height: 5vh;
+    z-index: -1;
+}
+
 .mountain.first {
-    top: 50%;
+    top: 45%;
     left: -10%;
     width: 400px;
     height: 400px;
     transform: rotate(30deg);
     z-index: -1;
+}
+
+.mountain.second {
+    top: 35%;
+    left: 0;
+    width: 400px;
+    height: 400px;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+.mountain.third {
+    top: 45%;
+    left: 15%;
+    width: 300px;
+    height: 300px;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+.mountain.fourth {
+    top: 32%;
+    left: 19%;
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    border-left: 360px solid transparent;
+    border-right: 360px solid transparent;
+    border-bottom: 330px solid black;
+    transform: rotate(-2deg);
+    z-index: -1;
+}
+
+.mountain.fifth {
+    top: 27.5%;
+    left: 45%;
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    border-left: 160px solid transparent;
+    border-right: 160px solid transparent;
+    border-bottom: 300px solid black;
+    z-index: -1;
+}
+
+.mountain.sixth {
+    top: 32.5%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    border-left: 160px solid transparent;
+    border-right: 160px solid transparent;
+    border-bottom: 300px solid black;
+    z-index: -1;
+}
+
+.mountain.seventh {
+    top: 39%;
+    left: 48.5%;
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    border-left: 390px solid transparent;
+    border-right: 390px solid transparent;
+    border-bottom: 300px solid black;
+    transform: rotate(5deg);
+    z-index: -1;
+}
+
+.mountain.eighth {
+    top: 30%;
+    left: 73%;
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    border-left: 170px solid transparent;
+    border-right: 170px solid transparent;
+    border-bottom: 315px solid black;
+    z-index: -1;
+}
+
+.mountain.ninth {
+    top: 35%;
+    left: 83%;
+    width: 450px;
+    height: 450px;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+#sun-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sun {
+    width: 45vh;
+    height: 45vh;
+    border-radius: 50%;
+    background: linear-gradient(yellow, magenta);
+    z-index: -2;
 }
