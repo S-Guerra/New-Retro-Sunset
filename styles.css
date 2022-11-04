@@ -18,6 +18,15 @@ body {
     background: linear-gradient(var(--sky-color), black);
   }
 
+#instruction {
+    position: absolute;
+    top: 1.5%;
+    left: 1.5%;
+    font-family: 'VT323', monospace;
+    font-size: 4.5vh;
+    color: white;
+}
+
 #plain {
     position: absolute;
     width: 100%;
