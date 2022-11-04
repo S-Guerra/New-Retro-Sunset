@@ -39,48 +39,57 @@ body {
 .horizontal-line {
     position: absolute;
     width: 100%;
-    height: 0.5vh;
     background-color: var(--plain-grid-color);
     filter: blur(0.5px);
 }
 
 .horizontal-line.first {
-    bottom: 90%;
+    height: 0.5025vh;
+    bottom: 32.5%;
 }
 
 .horizontal-line.second {
-    bottom: 80%;
+    height: 0.44154vh;
+    bottom: 52.82%;
 }
 
 .horizontal-line.third {
-    bottom: 70%;
+    height: 0.40587vh;
+    bottom: 64.71%;
 }
 
 .horizontal-line.fourth {
-    bottom: 60%;
+    height: 0.38058vh;
+    bottom: 73.14%;
 }
 
 .horizontal-line.fifth {
-    bottom: 50%;
+    height: 0.36096vh;
+    bottom: 79.68%;
 }
 
 .horizontal-line.sixth {
-    bottom: 40%;
+    height: 0.34491vh;
+    bottom: 85.03%;
 }
 
 .horizontal-line.seventh {
-    bottom: 30%;
+    height: 0.33138vh;
+    bottom: 89.54%;
 }
 
 .horizontal-line.eighth {
-    bottom: 20%;
+    height: 0.31962vh;
+    bottom: 93.46%;
 }
 
 .horizontal-line.ninth {
-    bottom: 10%;
+    height: 0.30927vh;
+    bottom: 96.91%;
 }
 
 .horizontal-line.tenth {
+    height: 0.3vh;
     bottom: 100%;
 }
 
@@ -88,8 +97,8 @@ body {
 .vertical-line {
     position: absolute;
     width: 1vh;
-    background-color: var(--plain-grid-color);
     height: 80vh;
+    background-color: var(--plain-grid-color);
     filter: blur(0.5px);
 }
 
@@ -243,7 +252,7 @@ body {
     width: 100%;
     height: 5vh;
     z-index: 2;
-    border-bottom: 0.7vh solid cyan;
+    border-bottom: 0.3vh solid cyan;
     filter: blur(0);
 }
 
