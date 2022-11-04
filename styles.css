@@ -35,7 +35,8 @@ body {
     background-color: black;
 }
 
-/* Quadrillage horizontal de la plaine */
+/* Horizontal Grid Lines */
+/* Perspective given by y=6.75log(x)+3.25 */
 .horizontal-line {
     position: absolute;
     width: 100%;
@@ -93,7 +94,8 @@ body {
     bottom: 100%;
 }
 
-/* Quadrillage vertical de la plaine */
+/* Vertical Grid Lines */
+/* Perspective focus point a little above the sun's center */
 .vertical-line {
     position: absolute;
     width: 1vh;
@@ -239,7 +241,7 @@ body {
     transform: rotate(68.75deg);
 }
 
-/* Horizon de montagnes */
+/* Mountain Horizon */
 .mountain {
     position: absolute;
     background-color: var(--mountain-color);
