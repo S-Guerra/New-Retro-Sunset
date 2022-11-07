@@ -357,7 +357,6 @@ body {
     width: 45vh;
     height: 45vh;
     z-index: -2;
-    margin-top: 4vh;
     border-radius: 50%;
     background: linear-gradient(
         rgb(255, 255, 0) 0%,
@@ -386,4 +385,18 @@ body {
         transparent 100%
         );
     filter: blur(1.2px) drop-shadow(16px 16px 20px rgba(255, 0, 200, 0.3));
+    animation: sunset 60s linear 0s infinite;
+}
+
+@keyframes sunset {
+    0% {
+        transform: translate(0, 0);
+    }
+    30% {
+        filter: blur(1.2px);
+    }
+    100% {
+        transform: translate(0, 52vh);
+        filter: blur(20px);
+    }
 }
