@@ -356,6 +356,8 @@ body {
 #sun {
     width: 45vh;
     height: 45vh;
+    z-index: -2;
+    margin-top: 4vh;
     border-radius: 50%;
     background: linear-gradient(
         rgb(255, 255, 0) 0%,
@@ -383,7 +385,5 @@ body {
         transparent 85%,
         transparent 100%
         );
-    z-index: -2;
-    /* filter: blur(2px); */
-    /* filter: drop-shadow(16px 16px 20px rgb(255, 0, 200)); */
+    filter: blur(1.2px) drop-shadow(16px 16px 20px rgba(255, 0, 200, 0.3));
 }
