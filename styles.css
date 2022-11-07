@@ -1,5 +1,5 @@
 :root {
-    --sky-color: #2d1b58;
+    --sky-color: #2e1c5a;
     --plain-grid-color: magenta;
     --plain-back-color: black;
     --mountain-color: black;
@@ -357,7 +357,33 @@ body {
     width: 45vh;
     height: 45vh;
     border-radius: 50%;
-    background: linear-gradient(yellow, var(--plain-grid-color));
+    background: linear-gradient(
+        rgb(255, 255, 0) 0%,
+        rgb(255, 153, 102) 40%,
+        transparent 40%,
+        transparent 41%,
+        rgb(255, 150, 105) 41%,
+        rgb(255, 140, 115) 45%,
+        transparent 45%,
+        transparent 47%,
+        rgb(255, 135, 120) 47%,
+        rgb(255, 122, 133) 52%,
+        transparent 52%,
+        transparent 55%,
+        rgb(255, 115, 140) 55%,
+        rgb(255, 99, 156) 61%,
+        transparent 61%,
+        transparent 65%,
+        rgb(255, 89, 166) 65%,
+        rgb(255, 71, 184) 72%,
+        transparent 72%,
+        transparent 77%,
+        rgb(255, 59, 196) 77%,
+        rgb(255, 38, 217) 85%,
+        transparent 85%,
+        transparent 100%
+        );
     z-index: -2;
-    filter: blur(2px);
+    /* filter: blur(2px); */
+    /* filter: drop-shadow(16px 16px 20px rgb(255, 0, 200)); */
 }
