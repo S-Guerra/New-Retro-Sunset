@@ -304,71 +304,71 @@ body {
 
 .mountain.first {
     top: 45%;
-    left: -10%;
-    width: 400px;
-    height: 400px;
+    left: -4%;
+    width: 48vh;
+    height: 48vh;
     transform: rotate(30deg);
 }
 
 .mountain.second {
-    top: 35%;
-    left: 0;
-    width: 400px;
-    height: 400px;
+    top: 37%;
+    left: 8%;
+    width: 36vh;
+    height: 36vh;
     transform: rotate(45deg);
 }
 
 .mountain.third {
     top: 45%;
-    left: 15%;
-    width: 300px;
-    height: 300px;
+    left: 17%;
+    width: 34vh;
+    height: 34vh;
     transform: rotate(45deg);
 }
 
 .mountain.fourth {
-    top: 32%;
-    left: 19%;
+    top: 35%;
+    left: 22%;
     width: 0;
     height: 0;
     background-color: transparent;
-    border-left: 360px solid transparent;
-    border-right: 360px solid transparent;
-    border-bottom: 330px solid black;
+    border-left: 42vh solid transparent;
+    border-right: 42vh solid transparent;
+    border-bottom: 37vh solid black;
     transform: rotate(-2deg);
 }
 
 .mountain.fifth {
     top: 27.5%;
-    left: 45%;
+    left: 49%;
     width: 0;
     height: 0;
     background-color: transparent;
-    border-left: 160px solid transparent;
-    border-right: 160px solid transparent;
-    border-bottom: 300px solid black;
+    border-left: 22vh solid transparent;
+    border-right: 22vh solid transparent;
+    border-bottom: 36vh solid black;
 }
 
 .mountain.sixth {
     top: 32.5%;
-    left: 50%;
+    left: 53%;
     width: 0;
     height: 0;
     background-color: transparent;
-    border-left: 160px solid transparent;
-    border-right: 160px solid transparent;
-    border-bottom: 300px solid black;
+    border-left: 22vh solid transparent;
+    border-right: 22vh solid transparent;
+    border-bottom: 36vh solid black;
 }
 
 .mountain.seventh {
     top: 39%;
-    left: 48.5%;
+    left: 54%;
     width: 0;
     height: 0;
     background-color: transparent;
-    border-left: 390px solid transparent;
-    border-right: 390px solid transparent;
-    border-bottom: 300px solid black;
+    border-left: 45vh solid transparent;
+    border-right: 45vh solid transparent;
+    border-bottom: 34vh solid black;
     transform: rotate(5deg);
 }
 
@@ -378,16 +378,16 @@ body {
     width: 0;
     height: 0;
     background-color: transparent;
-    border-left: 170px solid transparent;
-    border-right: 170px solid transparent;
-    border-bottom: 315px solid black;
+    border-left: 27vh solid transparent;
+    border-right: 27vh solid transparent;
+    border-bottom: 35vh solid black;
 }
 
 .mountain.ninth {
     top: 35%;
     left: 83%;
-    width: 450px;
-    height: 450px;
+    width: 43vh;
+    height: 43vh;
     transform: rotate(45deg);
 }
 
