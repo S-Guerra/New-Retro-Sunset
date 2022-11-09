@@ -28,15 +28,10 @@ body {
     animation: darken-sky 60s alternate 0s 2;
 }
 
-#wrapper {
-    width: 500px;
-}
-
 #instruction {
     position: absolute;
     top: 1.5%;
     left: 2.5%;
-    width: 500px;
     font-family: 'VT323', monospace;
     font-size: 4.5vh;
     border-right: 0.15em solid white;
@@ -45,7 +40,7 @@ body {
     white-space: nowrap;
     animation: typing 5s steps(31),
                blinking 1s steps(1) infinite,
-               hiding 7s linear 5s 1;
+               hiding 7s linear 6s 1;
     animation-fill-mode: forwards;
 }
 
@@ -453,7 +448,7 @@ body {
         width: 0;
     }
     100% {
-        width: 100%;
+        width: 57.2vh;
     }
 }
 
