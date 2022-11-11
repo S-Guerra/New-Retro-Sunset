@@ -11,19 +11,21 @@ body {
     filter: saturate(150%);
 }
 
-#sky {
+.absolute {
     position: absolute;
+}
+
+.sky {
     width: 100%;
-    height: 105vh;
+    height: 108vh;
     z-index: -3;
     overflow: hidden;
     background: linear-gradient(rgb(68, 47, 121), rgb(68, 47, 121) 30%, rgb(54, 29, 77) 45%, rgb(90, 0, 74), rgb(90, 45, 45) 85%, rgb(90, 74, 0));
     animation: darken-sky 60s alternate 0s 2;
 }
 
-#instruction-wrapper-wrapper {
+.instruction-wrapper-wrapper {
     display: flex;
-    position: absolute;
     top: 1.5%;
     left: 2.5%;
 }
@@ -42,8 +44,7 @@ body {
     animation-fill-mode: forwards;
 }
 
-#spotify {
-    position: absolute;
+.spotify {
     top: 1.5vh;
     right: 1.5vh;
     width: 40vh;
@@ -52,8 +53,7 @@ body {
     min-height: 80px;
 }
 
-#plain {
-    position: absolute;
+.plain {
     overflow: hidden;
     width: 100%;
     height: 40vh;
@@ -64,7 +64,6 @@ body {
 /* Horizontal Grid Lines */
 /* Perspective given by y=6.75log(x)+3.25 */
 .horizontal-line {
-    position: absolute;
     width: 100%;
     background-color: magenta;
     filter: blur(1.2px);
@@ -73,71 +72,71 @@ body {
 .horizontal-line.first {
     height: 0.5025vh;
     bottom: 32.5%;
-    animation: hl1-perspective 1s linear 0s infinite;
+    animation: hl1-perspective 1s linear 0s infinite, darken-plain 60s alternate 0s 2;
 }
 
 .horizontal-line.second {
     height: 0.44154vh;
     bottom: 52.82%;
-    animation: hl2-perspective 1s linear 0s infinite;
+    animation: hl2-perspective 1s linear 0s infinite, darken-plain 60s alternate 0s 2;
 }
 
 .horizontal-line.third {
     height: 0.40587vh;
     bottom: 64.71%;
-    animation: hl3-perspective 1s linear 0s infinite;
+    animation: hl3-perspective 1s linear 0s infinite, darken-plain 60s alternate 0s 2;
 }
 
 .horizontal-line.fourth {
     height: 0.38058vh;
     bottom: 73.14%;
-    animation: hl4-perspective 1s linear 0s infinite;
+    animation: hl4-perspective 1s linear 0s infinite, darken-plain 60s alternate 0s 2;
 }
 
 .horizontal-line.fifth {
     height: 0.36096vh;
     bottom: 79.68%;
-    animation: hl5-perspective 1s linear 0s infinite;
+    animation: hl5-perspective 1s linear 0s infinite, darken-plain 60s alternate 0s 2;
 }
 
 .horizontal-line.sixth {
     height: 0.34491vh;
     bottom: 85.03%;
-    animation: hl6-perspective 1s linear 0s infinite;
+    animation: hl6-perspective 1s linear 0s infinite, darken-plain 60s alternate 0s 2;
 }
 
 .horizontal-line.seventh {
     height: 0.33138vh;
     bottom: 89.54%;
-    animation: hl7-perspective 1s linear 0s infinite;
+    animation: hl7-perspective 1s linear 0s infinite, darken-plain 60s alternate 0s 2;
 }
 
 .horizontal-line.eighth {
     height: 0.31962vh;
     bottom: 93.46%;
-    animation: hl8-perspective 1s linear 0s infinite;
+    animation: hl8-perspective 1s linear 0s infinite, darken-plain 60s alternate 0s 2;
 }
 
 .horizontal-line.ninth {
     height: 0.30927vh;
     bottom: 96.91%;
-    animation: hl9-perspective 1s linear 0s infinite;
+    animation: hl9-perspective 1s linear 0s infinite, darken-plain 60s alternate 0s 2;
 }
 
 .horizontal-line.tenth {
     height: 0.3vh;
     bottom: 100%;
-    animation: hl10-perspective 1s linear 0s infinite;
+    animation: hl10-perspective 1s linear 0s infinite, darken-plain 60s alternate 0s 2;
 }
 
 /* Vertical Grid Lines */
 /* Perspective focus point a little above the sun's center */
 .vertical-line {
-    position: absolute;
     width: 1vh;
     height: 80vh;
     background-color: magenta;
     filter: blur(1.2);
+    animation: darken-plain 60s alternate 0s 2;
 }
 
 .vertical-line.minus11 {
@@ -287,7 +286,6 @@ body {
 }
 
 .mountain {
-    position: absolute;
     background-color: black;
     z-index: -1;
     filter: blur(1px);
@@ -447,6 +445,12 @@ body {
 @keyframes darken-sky {
     100% {
         transform: translateY(-50%);
+    }
+}
+
+@keyframes darken-plain {
+    100% {
+        background-color: rgb(66, 33, 33);
     }
 }
 
