@@ -44,7 +44,7 @@ body {
     animation-fill-mode: forwards;
 }
 
-.music {
+.spotify {
     top: 1.5vh;
     right: 1.5vh;
     z-index: 2;
