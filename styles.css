@@ -44,7 +44,8 @@ body {
     animation-fill-mode: forwards;
 }
 
-.spotify {
+iframe {
+    position: absolute;
     top: 1.5vh;
     right: 1.5vh;
     z-index: 2;
